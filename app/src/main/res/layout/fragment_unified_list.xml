@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".ui.ClassList.FragmentClassList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="1dp"
+            android:text="Notifications"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_unified_assignment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="55dp"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".ui.ClassList.FragmentUnifiedTaskList"
+        tools:listitem="@layout/item_notifications"
+        />
+
+    <!--<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_unified_questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:clickable="true"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".ui.ClassList.FragmentUnifiedTaskList"
+        tools:listitem="@layout/item_unified_questions"
+        android:alpha="0"/>-->
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
