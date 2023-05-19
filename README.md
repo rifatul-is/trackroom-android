@@ -13,5 +13,5 @@ Use the Interface and Model files to customize the request and response to your 
 
 # Screenshots
 
-<img src="Screenshot/1.png" width="200"> <img src="Screenshot/2.png" width="200"> <img src="Screenshot/3.png" width="200">
+<img src="Screenshot/1.png" width="200"> <img src="Screenshot/2.png" width="200"> <img src="Screenshot/home.png" width="200">
 
